@@ -4,16 +4,41 @@
     <meta charset="UTF-8">
     <title>Test HTML page</title>
     <style>
+        h1 {
+        font-size : 40px
+        }
+
         .h2-text {
         color:green
+        }
+
+        .h3-text {
+        font-size : 5px
+        }
+
+        #h4-text {
+        font-size : 60px
+        }
+
+        input[type='text']:hover {
+        background-color: red
+        }
+
+        a:hover {
+        color: red
+        }
+
+        li::marker {
+        color: yellow
+        }
     </style>
 </head>
 <body>
 <div class="titles">
     <h1 id="h1-text">H1 TITLE</h1>
     <h2 class="h2-text">H2 TITLE</h2>
-    <h3><span style="color:orange;">H3 TITLE</span></h3>
-    <h4><span style="color:purple;">H4 TITLE</span></h4>
+    <h3 class="h2-text h3-text"><span style="color:orange;">H3 TITLE</span></h3>
+    <h4 id="h4-text"><span style="color:purple;">H4 TITLE</span></h4>
     <h5><span style="color:pink;">H5 TITLE</span></h5>
     <h6><span style="color:red;">H6 TITLE</span></h6>
 </div>
