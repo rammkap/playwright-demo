@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Test HTML page</title>
+    <style>
+        .h2-text {
+        color:green
+    </style>
 </head>
 <body>
 <div class="titles">
-    <h1>H1 TITLE</h1>
-    <h2><span style="color:green;">H2 TITLE</span></h2>
+    <h1 id="h1-text">H1 TITLE</h1>
+    <h2 class="h2-text">H2 TITLE</h2>
     <h3><span style="color:orange;">H3 TITLE</span></h3>
     <h4><span style="color:purple;">H4 TITLE</span></h4>
     <h5><span style="color:pink;">H5 TITLE</span></h5>
@@ -28,11 +32,39 @@
 </ol>
 
 <div class='input and buttons'>
-    <input type="text" placeholder="type text">
+    <input type="text" value="default text" placeholder="type text">
     <input type="password" placeholder="type password">
     <input type="email" placeholder="type email">
     <button type="submit">Send message</button>
     <button type="submit" disabled>Send message disabled</button>
+    <textarea placeholder="Text area"></textarea>
 </div>
+
+<form action="/action" method="POST">
+    <input type="text" placeholder="type text">
+    <input type="password" placeholder="type password">
+    <input required type="email" placeholder="type email">
+    <button type="submit">Send message</button>
+    <button type="submit" disabled>Send message disabled</button>
+    <textarea placeholder="Text area"></textarea>
+    <button type="submit">Send form</button>
+</form>
+
+<table>
+    <thead>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>-</td>
+        <td>+</td>
+        <td> </td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>
